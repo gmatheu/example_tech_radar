@@ -7,50 +7,16 @@
       purpose: "Background Jobs"
       more_details_url: https://github.com/resque/resque/tree/1-x-stable
   "Trial":
-    ElasticSearch:
+    JHipster:
       purpose: "Indexed Search"
-      more_details_summary: "ElasticSearch is a database designed for high performance searching of potentially complex data."
+      more_details_summary: "Application generator used to develop quickly a modern web application using AngularJS and the Spring Framework."
+      more_details_url: https://jhipster.github.io/
       why_summary: "Used by platform team with great success."
-    Bootstrap:
-      purpose: "CSS Framework"
-      more_details_url: http://getbootstrap.com
-      why_summary: "Used in several apps"
-    ERB:
-      purpose: "Front-end templates"
-      more_details_url: http://guides.rubyonrails.org/layouts_and_rendering.html
-      why_summary: "The new accounting app isn't using ERB, but all the rest are."
-    Lodash:
-      purpose: "Javascript utility library"
-      more_details_url:
-      why_summary: "Used by all apps but the legacy image server."
-  "Assess":
-    Sidekiq:
-      purpose: "Background Jobs"
-      more_details_url:
-      why_summary: "Only mobile is using."
-    Pact:
-      purpose: "HTTP Service Testing"
-      why_url: http://multithreaded.stitchfix.com/blog/2015/11/23/consumer-driven-contracts/
-      more_details_url: https://github.com/realestate-com-au/pact
-      more_details_summary: "Pact is a system for implementing consumer-driven contracts, which allows us to get good test coverage of microservices without doing end-to-end integration tests.  It works by consuming code publishing JSON files to a shared repository that the consumed service can then execute against itself to ensure compatibility with the consumer."
-      why_summary: "Ops using for microservices testing"
-    Confluence:
-      purpose: "Documentation"
-      more_details_url: https://www.atlassian.com/software/confluence/
-      why_summary: "UX are the only team using this."
-    BassCSS:
-      purpose: "CSS Framework"
-      why_summary: "Only used on the admin app."
-      more_details_url: http://www.basscss.com/
   "Hold":
     JIRA:
       purpose: "Issue & Task Management"
       more_details_url: https://www.atlassian.com/software/jira/
       why_summary: "Abandoned for lighterweight solutions"
-    Google Hangouts:
-      purpose: "Video Chat"
-      more_details_url: https://hangouts.google.com/
-      why_summary: "Abandoned for BlueJeans"
 "Platforms":
   "Adopt":
     Heroku:
@@ -83,8 +49,6 @@
         Anyone can place an item on the Agenda, and it is up to them to lead the discussion and collect next-steps, if any.
 
         Typically, the first meeting of the month will be a deeper-dive into the team's roadmap and to generally set priorities for the month.
-    "Continuous Deployment":
-      purpose: "Ship Code"
     "Pull Requests":
       purpose: "Code Review & Change Management"
       more_details_url: http://multithreaded.stitchfix.com/blog/2013/07/30/our-git-workflow/
@@ -92,48 +56,27 @@
     "HTTP Services":
       purpose: "Application Integration"
       why_summary: "Probably ready to adopt.  Some older code still using gems & messages-as-APIs"
-    "Asynchronous API Design":
-      purpose: "Scaling"
-      why_summary: "payments and shipping apps using heavily"
+
   "Assess":
     "Consumer-driven tests for services":
       purpose: "Ensure changes to services do not break upstream clients"
       more_details_url: http://martinfowler.com/articles/consumerDrivenContracts.html
       why_summary: "Ops experimenting (see Pact)"
-    "End-to-end integrated tests in CI":
-      purpose: "Ensure changes to services do not break upstream clients"
-      why_summary: "Mobile using for microservices testing"
   "Hold":
     "Shared Gems":
       purpose: "Application Integration"
       why_summary: "Difficult to manage, doesn't scale"
-    "RabbitMQ for RPC":
-      purpose: "Application Integration"
-      why_summary: "Increases coupling in subtle ways, and is not fault-tolerant"
-    "Shared database":
-      purpose: "Application Integration"
-      why_summary: "Not scaling"
 "Languages and Frameworks":
   "Adopt":
     Ruby:
       purpose: Middleware Programming
       more_details_url: https://www.ruby-lang.org/en/
-    Rails:
-      purpose: Middleware Framework
-      more_details_url: http://rubyonrails.org/
   "Trial":
     CoffeeScript:
       purpose: Browser Programming
       more_details_url:
       why_summary: "Most apps are using this, with Admin being a notable exception"
-    JavaScript:
-      purpose: Browser Programming
-      more_details_url:
-      why_summary: "Admin front-end uses JavaScript"
-    Swift:
-      purpose: iOS Development
-      more_details_url: https://developer.apple.com/swift/
-      why_summary: "Likely Adopt, but only one use-case currently"
+
   "Assess":
     Go:
       more_details_url: https://golang.org/
